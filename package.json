@@ -1,5 +1,5 @@
 {
-  "name": "dropzone-vue3",
+  "name": "vue3-simple-dropzone",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
