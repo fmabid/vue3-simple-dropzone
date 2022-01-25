@@ -1,6 +1,11 @@
 <template>
   <div class="d-flex-all-center d-mainbody">
-    <div ref="refDropzone" class="d-dropzone">
+    <div
+      ref="refDropzone"
+      @drop="onDropHandler"
+      @dragover.prevent="onDragoverHandler"
+      class="d-dropzone"
+    >
       <input ref="refFile" type="file" @change="onDrop" style="display: none" />
 
       <div @click="refFile.click()" class="d-h-full d-flex-all-center">
@@ -22,9 +27,29 @@ const refFile = ref();
 const refDropzone = ref();
 
 function onDrop(acceptFiles: any) {
-  console.log(acceptFiles.target.files["0"]);
-
   emit("onUploaded", acceptFiles.target.files["0"]);
+}
+
+function onDragHandler(event: any) {
+  console.log(event);
+}
+
+function onDropHandler(event: any) {
+  event.preventDefault();
+
+  if (event.dataTransfer.items) {
+    console.log(event.dataTransfer.items[0].getAsFile());
+    for (var i = 0; i < event.dataTransfer.items.length; i++) {
+      if (event.dataTransfer.items[i].kind === "file") {
+        var file = event.dataTransfer.items[i].getAsFile();
+        console.log("... file[" + i + "].name = " + file.name);
+      }
+    }
+  }
+}
+
+function onDragoverHandler(event: any) {
+  event.preventDefault();
 }
 </script>
 
