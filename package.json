@@ -1,5 +1,19 @@
 {
-  "name": "vue3-simple-dropzone",
+  "description": "> vue3-simple-dropzone is file uploader componet for your Vue-3 project. At this moment this works for only single file.",
+  "directories": {
+    "doc": "doc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fmabid/vue3-simple-dropzone.git"
+  },
+  "author": "Abid",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fmabid/vue3-simple-dropzone/issues"
+  },
+  "homepage": "https://github.com/fmabid/vue3-simple-dropzone#readme",
+  "name": "@fmabid/vue3-simple-dropzone",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
