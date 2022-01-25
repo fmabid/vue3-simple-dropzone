@@ -12,7 +12,9 @@
       <div @click="refFile.click()" class="d-h-full d-flex-all-center">
         <!-- <span v-if="isDragActive">Drop the files here ...</span>
         <span v-else>Drag 'n' drop image here, or click to select image</span> -->
-        <p>click to select a file</p>
+        <slot>
+          <p>click to select a file</p>
+        </slot>
       </div>
     </div>
   </div>
@@ -34,10 +36,11 @@ function onDrop(acceptFiles: any) {
   emit("onSelect", acceptFiles.target.files["0"]);
 }
 
-function onDragHandler(event: any) {
+// Not in use
+/* function onDragHandler(event: any) {
   console.log(event);
 }
-
+ */
 function onDropHandler(event: any) {
   event.preventDefault();
 
