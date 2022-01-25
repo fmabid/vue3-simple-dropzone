@@ -13,7 +13,7 @@
     "url": "https://github.com/fmabid/vue3-simple-dropzone/issues"
   },
   "homepage": "https://github.com/fmabid/vue3-simple-dropzone#readme",
-  "name": "@fmabid/vue3-simple-dropzone",
+  "name": "vue3-simple-dropzone",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
