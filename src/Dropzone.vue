@@ -13,7 +13,7 @@
         <!-- <span v-if="isDragActive">Drop the files here ...</span>
         <span v-else>Drag 'n' drop image here, or click to select image</span> -->
         <slot>
-          <p>click to select a file</p>
+          <p>click to select a file / Drop file</p>
         </slot>
       </div>
     </div>

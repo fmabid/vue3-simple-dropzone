@@ -13,7 +13,9 @@ Example:
 
 ```
 <template>
-  <Dropzone className="boxStyle" @onSelect="handler" />
+  <Dropzone className="boxStyle" @onSelect="handler">
+    <p>Drop file here</p>
+  </Dropzone>
 </template>
 
 <script setup lang="ts">
