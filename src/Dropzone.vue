@@ -5,6 +5,7 @@
       @drop="onDropHandler"
       @dragover.prevent="onDragoverHandler"
       class="d-dropzone"
+      :class="className"
     >
       <input ref="refFile" type="file" @change="onDrop" style="display: none" />
 
@@ -20,14 +21,17 @@
 <script setup lang="ts">
 import { ref } from "vue";
 
-// defineProps<{ msg: string }>();
-const emit = defineEmits(["onUploaded"]);
+defineProps({
+  className: String,
+});
+
+const emit = defineEmits(["onSelect"]);
 
 const refFile = ref();
 const refDropzone = ref();
 
 function onDrop(acceptFiles: any) {
-  emit("onUploaded", acceptFiles.target.files["0"]);
+  emit("onSelect", acceptFiles.target.files["0"]);
 }
 
 function onDragHandler(event: any) {
@@ -38,13 +42,7 @@ function onDropHandler(event: any) {
   event.preventDefault();
 
   if (event.dataTransfer.items) {
-    console.log(event.dataTransfer.items[0].getAsFile());
-    for (var i = 0; i < event.dataTransfer.items.length; i++) {
-      if (event.dataTransfer.items[i].kind === "file") {
-        var file = event.dataTransfer.items[i].getAsFile();
-        console.log("... file[" + i + "].name = " + file.name);
-      }
-    }
+    emit("onSelect", event.dataTransfer.items[0].getAsFile());
   }
 }
 
