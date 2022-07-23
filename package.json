@@ -15,6 +15,18 @@
   "homepage": "https://github.com/fmabid/vue3-simple-dropzone#readme",
   "name": "vue3-simple-dropzone",
   "version": "0.0.0",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/vue3-simple-dropzone.udm.js",
+  "module": "./dist/vue3-simple-dropzone.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vue3-simple-dropzone.js",
+      "require": "./dist/vue3-simple-dropzone.umd.cjs"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
