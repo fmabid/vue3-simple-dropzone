@@ -1,6 +1,6 @@
 ## vue3-simple-dropzone
 
-> vue3-simple-dropzone is file uploader componet for your Vue-3 project. At this moment this works for only single file.
+> vue3-simple-dropzone is file uploader componet for your Vue-3 project. At this moment this works for only single file uploading.
 
 ![](doc/images/view.png)
 
@@ -33,17 +33,14 @@ function handler(ev) {
 </style>
 ```
 
-
 Options:
 
-|       Prop         |Type                          |Description                         |
-|----------------|-------------------------------|-----------------------------|
-|`className`|`string`            |This is optional. To change style pass class names as string.           |
-
+| Prop        | Type     | Description                                                   |
+| ----------- | -------- | ------------------------------------------------------------- |
+| `className` | `string` | This is optional. To change style pass class names as string. |
 
 Events:
 
-|       Prop         |Type                          |Description                         |
-|----------------|-------------------------------|-----------------------------|
-|`onSelect`|`object`            |Emits the file object.           |
-
+| Prop       | Type     | Description            |
+| ---------- | -------- | ---------------------- |
+| `onSelect` | `object` | Emits the file object. |
