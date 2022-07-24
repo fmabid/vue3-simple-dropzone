@@ -20,38 +20,49 @@
   </div>
 </template>
 
-<script setup lang="ts">
-import { ref } from "vue";
+<script lang="ts">
+import { ref, defineComponent } from "vue";
 
-defineProps({
-  className: String,
+export default defineComponent({
+  name: "Dropzone",
+  props: {
+    className: String,
+  },
+  emits: ["onSelect"],
+  setup(_, { emit }) {
+    const refFile = ref();
+    const refDropzone = ref();
+
+    function onDrop(acceptFiles: any) {
+      emit("onSelect", acceptFiles.target.files["0"]);
+    }
+
+    // Not in use
+    /* function onDragHandler(event: any) {
+      console.log(event);
+    }
+    */
+    function onDropHandler(event: any) {
+      event.preventDefault();
+
+      if (event.dataTransfer.items) {
+        emit("onSelect", event.dataTransfer.items[0].getAsFile());
+      }
+    }
+
+    function onDragoverHandler(event: any) {
+      event.preventDefault();
+    }
+
+    return {
+      refFile,
+      refDropzone,
+      onDrop,
+      onDropHandler,
+      onDragoverHandler,
+    };
+  },
 });
-
-const emit = defineEmits(["onSelect"]);
-
-const refFile = ref();
-const refDropzone = ref();
-
-function onDrop(acceptFiles: any) {
-  emit("onSelect", acceptFiles.target.files["0"]);
-}
-
-// Not in use
-/* function onDragHandler(event: any) {
-  console.log(event);
-}
- */
-function onDropHandler(event: any) {
-  event.preventDefault();
-
-  if (event.dataTransfer.items) {
-    emit("onSelect", event.dataTransfer.items[0].getAsFile());
-  }
-}
-
-function onDragoverHandler(event: any) {
-  event.preventDefault();
-}
 </script>
 
 <style scoped>
