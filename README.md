@@ -11,7 +11,7 @@
 
 Example:
 
-```
+```vue
 <template>
   <Dropzone className="boxStyle" @onSelect="handler">
     <p>Drop file here</p>
