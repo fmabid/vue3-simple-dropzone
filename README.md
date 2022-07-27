@@ -46,14 +46,14 @@ function handler(event) {
 </style>
 ```
 
-Options:
+## Options:
 
 | Prop        | Type     | Description                                                   |
 | ----------- | -------- | ------------------------------------------------------------- |
 | `className` | `string` | This is optional. To change style pass class names as string. |
 
-Events:
+## Events:
 
-| Prop       | Type     | Description            |
-| ---------- | -------- | ---------------------- |
-| `onSelect` | `object` | Emits the file object. |
+| Event name | Description            |
+| ---------- | ---------------------- |
+| `onSelect` | Emits the file object. |
