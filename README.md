@@ -1,9 +1,12 @@
+
 ## vue3-simple-dropzone
 
 > vue3-simple-dropzone is file uploader componet for your Vue-3 project. At this moment this works for only single file uploading.
 
 Find it at [npm](https://www.npmjs.com/package/vue3-simple-dropzone)
 
+<a href="https://www.npmjs.com/package/vue3-simple-dropzone"><img src="https://img.shields.io/npm/dt/vue3-simple-dropzone.svg?style=flat-square" alt="Downloads"></a>
+<a href="https://www.npmjs.com/package/vue3-simple-dropzone"><img src="https://img.shields.io/npm/v/vue3-simple-dropzone.svg?style=flat-square" alt="Version"></a>
 
 ## Installation
 
