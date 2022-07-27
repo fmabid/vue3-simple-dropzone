@@ -2,11 +2,13 @@
 
 > vue3-simple-dropzone is file uploader componet for your Vue-3 project. At this moment this works for only single file uploading.
 
-![](https://raw.githubusercontent.com/fmabid/vue3-simple-dropzone/master/doc/images/view.png)
+Find it at [npm](https://www.npmjs.com/package/vue3-simple-dropzone)
 
-Install package from https://www.npmjs.com/package/vue3-simple-dropzone
 
-or run:
+## Installation
+
+Run:
+
 ```bash
 npm i vue3-simple-dropzone
 ```
@@ -17,6 +19,8 @@ npm i vue3-simple-dropzone
 - Use `onSelect` to handle event.
 
 Example:
+
+![](https://raw.githubusercontent.com/fmabid/vue3-simple-dropzone/master/doc/images/view.png)
 
 ```vue
 <template>
