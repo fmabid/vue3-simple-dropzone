@@ -1,4 +1,3 @@
-
 ## vue3-simple-dropzone
 
 > vue3-simple-dropzone is file uploader componet for your Vue-3 project. At this moment this works for only single file uploading.
@@ -33,9 +32,9 @@ Example:
 </template>
 
 <script setup lang="ts">
-import Dropzone from "./Dropzone.vue";
+import Dropzone from "vue3-simple-dropzone";
 
-function handler(ev) {
+function handler(event) {
   // Handel event
 }
 </script>
