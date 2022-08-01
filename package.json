@@ -1,6 +1,5 @@
 {
   "name": "vue3-simple-dropzone",
-  "private": true,
   "version": "1.0.2",
   "type": "module",
   "main": "./dist/vue3-simple-dropzone.umd.js",
