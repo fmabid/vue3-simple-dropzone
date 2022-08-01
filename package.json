@@ -2,14 +2,14 @@
   "name": "vue3-simple-dropzone",
   "version": "1.0.1",
   "description": "",
-  "main": "dist/vue3-simple-dropzone.ssr.js",
-  "browser": "dist/vue3-simple-dropzone.esm.js",
-  "module": "dist/vue3-simple-dropzone.esm.js",
-  "unpkg": "dist/vue3-simple-dropzone.min.js",
-  "types": "dist/types/src/entry.esm.d.ts",
+  "main": "./dist/vue3-simple-dropzone.ssr.js",
+  "browser": "./dist/vue3-simple-dropzone.esm.js",
+  "module": "./dist/vue3-simple-dropzone.esm.js",
+  "unpkg": "./dist/vue3-simple-dropzone.min.js",
+  "types": "./dist/types/src/entry.esm.d.ts",
   "files": [
-    "dist/*",
-    "src/**/*.vue"
+    "./dist/*",
+    "./src/**/*.vue"
   ],
   "sideEffects": false,
   "scripts": {
