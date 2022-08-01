@@ -24,7 +24,7 @@
 import { ref, defineComponent } from "vue";
 
 export default defineComponent({
-  name: "Dropzone",
+  name: "App",
   props: {
     className: String,
   },
@@ -46,6 +46,8 @@ export default defineComponent({
       event.preventDefault();
 
       if (event.dataTransfer.items) {
+        console.log(event.dataTransfer.items[0].getAsFile());
+
         emit("onSelect", event.dataTransfer.items[0].getAsFile());
       }
     }
@@ -64,3 +66,28 @@ export default defineComponent({
   },
 });
 </script>
+
+<style scoped>
+.d-h-full {
+  height: 100%;
+}
+.d-flex-all-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.d-mainbody {
+  position: relative;
+}
+
+.d-dropzone {
+  width: 300px;
+  height: 200px;
+  background-color: rgb(224 242 254 / 1);
+  border-width: 2px;
+  border-color: rgb(125 211 252 / 1);
+  border-style: dashed;
+  border-radius: 1rem;
+}
+</style>
