@@ -7,6 +7,9 @@ Find it at [npm](https://www.npmjs.com/package/vue3-simple-dropzone)
 <a href="https://www.npmjs.com/package/vue3-simple-dropzone"><img src="https://img.shields.io/npm/dt/vue3-simple-dropzone.svg?style=flat-square" alt="Downloads"></a>
 <a href="https://www.npmjs.com/package/vue3-simple-dropzone"><img src="https://img.shields.io/npm/v/vue3-simple-dropzone.svg?style=flat-square" alt="Version"></a>
 
+#### [Demo](dpmaker.vercel.app)
+Get source of the demo at https://github.com/fmabid/dpmaker
+
 ## Installation
 
 Run:
