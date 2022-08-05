@@ -10,8 +10,7 @@
     ".": {
       "import": "./dist/vue3-simple-dropzone.es.js",
       "require": "./dist/vue3-simple-dropzone.umd.js"
-    },
-    "./dist/style.css": "./dist/style.css"
+    }
   },
   "scripts": {
     "dev": "vite",
