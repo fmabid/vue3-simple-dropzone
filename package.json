@@ -27,5 +27,18 @@
     "typescript": "^4.6.4",
     "vite": "^3.0.0",
     "vue-tsc": "^0.38.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fmabid/vue3-simple-dropzone"
+  },
+  "homepage": "https://github.com/fmabid/vue3-simple-dropzone",
+  "bugs": {
+    "url": "https://github.com/fmabid/vue3-simple-dropzone/issues"
+  },
+  "keywords": [
+    "vue3",
+    "dropzone",
+    "uploader"
+  ]
 }
