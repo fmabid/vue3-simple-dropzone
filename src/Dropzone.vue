@@ -7,7 +7,7 @@
       class="d-dropzone"
       :class="className"
     >
-      <input ref="refFile" type="file" @change="onDrop" style="display: none" />
+      <input ref="refFile" type="file" :accept="accept" @change="onDrop" style="display: none" />
 
       <div @click="refFile.click()" class="d-h-full d-flex-all-center">
         <!-- <span v-if="isDragActive">Drop the files here ...</span>
@@ -27,6 +27,7 @@ export default defineComponent({
   name: "Dropzone",
   props: {
     className: String,
+    accept: String,
   },
   emits: ["onSelect"],
   setup(_, { emit }) {
