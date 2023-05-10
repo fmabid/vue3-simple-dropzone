@@ -8,6 +8,7 @@ Find it at [npm](https://www.npmjs.com/package/vue3-simple-dropzone)
 <a href="https://www.npmjs.com/package/vue3-simple-dropzone"><img src="https://img.shields.io/npm/v/vue3-simple-dropzone.svg?style=flat-square" alt="Version"></a>
 
 #### [Demo](https://dpmaker.vercel.app)
+
 Get source of the demo at https://github.com/fmabid/dpmaker
 
 ## Installation
@@ -51,9 +52,10 @@ function handler(event) {
 
 ## Options:
 
-| Prop        | Type     | Description                                                   |
-| ----------- | -------- | ------------------------------------------------------------- |
-| `className` | `string` | This is optional. To change style pass class names as string. |
+| Prop        | Type     | Description                                                                                                                                                                  |
+| ----------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `className` | `string` | This is optional. To change style pass class names as string.                                                                                                                |
+| `accept`    | `string` | This is optional. Pass the file types(`audio/*`, `video/*`, `image/*`, file_extension `(e.g: .gif, .jpg, .png, .doc)`) that you want to pick from the file input dialog box. |
 
 ## Events:
 
