@@ -1,6 +1,12 @@
 {
   "name": "vue3-simple-dropzone",
-  "version": "1.2.0",
+  "version": "1.2.1",
+  "type": "module",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "license": "MIT",
   "files": [
     "dist"
   ],
@@ -10,12 +16,15 @@
     ".": {
       "import": "./dist/vue3-simple-dropzone.es.js",
       "require": "./dist/vue3-simple-dropzone.umd.js"
-    }
+    },
+    "./style.css": "./dist/vue3-simple-dropzone.css"
   },
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "preview": "vite preview"
+    "postbuild": "node bin/bundler.js",
+    "preview": "vite preview",
+    "publish:npm": "npm run build && npm publish dist/"
   },
   "dependencies": {
     "vue": "^3.5.32"
