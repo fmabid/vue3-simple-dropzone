@@ -16,7 +16,7 @@ export default defineConfig({
       // the proper extensions will be added
       fileName: (format) => `vue3-simple-dropzone.${format}.js`,
     },
-    rollupOptions: {
+    rolldownOptions: {
       // make sure to externalize deps that shouldn't be bundled
       // into your library
       external: ["vue"],
