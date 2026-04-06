@@ -35,7 +35,7 @@ delete packageJson.scripts;
 delete packageJson.devDependencies;
 delete packageJson.packageManager;
 
-packageJson.files = ['*.js', '*.css', 'package.json', 'LICENSE'];
+packageJson.files = ['*.js', '*.css', 'package.json', 'LICENSE', 'README.md'];
 
 packageJson.main = './vue3-simple-dropzone.umd.js';
 packageJson.module = './vue3-simple-dropzone.es.js';
@@ -55,7 +55,7 @@ writeFileSync(
 );
 
 // --- 3. LICENSE and README into dist ---
-for (const file of ['LICENSE']) {
+for (const file of ['LICENSE', 'README.md']) {
   const src = resolve(__dirname, '..', file);
   if (existsSync(src)) {
     copyFileSync(src, resolve(distDir, file));
